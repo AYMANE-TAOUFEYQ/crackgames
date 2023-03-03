@@ -1,0 +1,124 @@
+.container{
+    &__logo{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 3.2rem;
+        line-height: 3.9rem;
+        color: $color-white;
+        cursor: pointer;
+        &--orange{
+            color: $color-primary;
+        }
+    }
+    &__category{
+        &--link{
+            color: $color-white;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 2rem;
+            line-height: 2.4rem;
+            margin-right: 5rem;
+            transition: all .2s;
+        }
+        &--link:hover{
+            color: $color-primary;
+            transform: scale(1.1);
+        }
+    }
+}
+
+
+.Popular{
+    &__title{
+        margin: 3.2rem 0;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 3.4rem;
+        line-height: 4.1rem;
+        color: $color-white;
+        letter-spacing: 0.0075em;
+    }
+}
+
+.recent{
+
+    &__title{
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        letter-spacing: 0.02em;
+        color: #1B1B1D;
+        text-transform: uppercase;
+    }
+}
+
+.category{
+
+    &__title{
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        letter-spacing: 0.02em;
+    }
+
+    &__link{
+        &__span{
+            font-weight: 400;
+            font-size: 1.6rem;
+            line-height: 2rem;
+            letter-spacing: 0.02em;
+            transition: all .2s;
+
+
+            &:hover{
+                color: $color-primary;
+            }
+        }
+    }
+}
+
+.orange {
+    color: $color-primary;
+}
+.black {
+    color: $color-black-1;
+}
+.white{
+    color: $color-white;
+}
+
+.postcard{
+    &__details{
+        &__title{
+            &__link{
+                font-weight: 400;
+                font-size: 2.4rem;
+                line-height: 2.9rem;
+                letter-spacing: 0.005em;
+                overflow-wrap: anywhere;
+                color: $color-black-1;
+            }
+        }
+        &__description{
+            color: $color-grey-1;
+            font-weight: 400;
+            font-size: 1.2rem;
+            line-height: 1.5rem;
+            letter-spacing: 0.005em;
+            overflow-wrap: anywhere;
+        }
+        &__bottom{
+            &__detail{
+                &__author{
+                    
+                }
+                &__date{
+
+                }
+            }
+            &__readMore{
+                
+            }
+        }
+    }
+} 

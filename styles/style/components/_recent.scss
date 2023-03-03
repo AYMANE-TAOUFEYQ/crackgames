@@ -1,0 +1,51 @@
+.recent {
+    border-radius: 1rem;
+
+    &__item{
+    cursor: pointer;
+    padding: 4px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: all .2s;
+
+    &:hover{
+        border: 2px solid #1B1B1D;
+    }
+    &:hover &__details__title{
+        color: #EC6336;
+        
+    }
+        &__image{
+
+            &--img{
+                width: 6rem;
+                height: 6rem;
+                border-radius: 5px;
+            }
+        }
+
+        &__details{
+            width: 100%;
+            &__title{
+                width: 100%;
+                font-weight: 400;
+                font-size: 1.4rem;
+                line-height: 1.7rem;
+                letter-spacing: 0.02em;
+                overflow-wrap: anywhere;
+
+                transition: all .2s;
+
+            }
+            &__date{
+                margin-top: 1rem;
+                font-weight: 400;
+                font-size: 1.2rem;
+                line-height: 1.5rem;
+                letter-spacing: 0.02em;
+
+                color: #EC6336;
+            }
+        }
+    }
+}

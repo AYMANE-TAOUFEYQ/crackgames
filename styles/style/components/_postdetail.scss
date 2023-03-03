@@ -1,0 +1,115 @@
+.postDetail {
+    color: $color-black-1;
+    &__ads{
+        background: #D9D9D9;
+        border-radius: 1rem;
+        margin-bottom: 1.6rem;
+        height: 17rem;
+    }
+    &__image{
+        border-radius: .5rem;
+        margin-bottom: 1.6rem;
+    }
+
+    &__details{
+        &__info {
+            margin-bottom: 1.6rem;
+            &__author {
+            font-weight: 400;
+            font-size: 2rem;
+            line-height: 2.9rem;
+            letter-spacing: 0.005em; 
+            margin-right: 2.8rem;
+            @include respond (tab-port-break-2) {
+                font-size: 1.6rem;
+            }
+            }
+            &__date {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 2rem;
+                line-height: 2rem;
+                letter-spacing: 0.005em;
+                @include respond (tab-port-break-2) {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+        
+        &__title {
+            font-weight: 400;
+            font-size: 2.8rem;
+            line-height: 3.4rem;
+            letter-spacing: 0.02em;
+            margin-bottom: 1.6rem;
+            @include respond (tab-port-break-2) {
+                font-size: 2.4rem;
+            }
+        }
+        &__paragraph {
+
+            font-size: 1.6rem;
+
+            margin-bottom: 1.6rem;
+            color: rgba($color-black-1, 0.7);
+            @include respond (tab-port-break-2) {
+                font-size: 1.2rem;
+            }
+        }
+    }
+    &__link{
+        display: flex;
+        justify-content: space-around;
+        &__Download {
+            width: 31.7rem;
+            height: 8.1rem;
+            background-color: $color-primary;
+            color: $color-white;
+            border-radius: .5rem;
+            margin-right: 1.9rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-weight: 400;
+            font-size: 2.2rem;
+            line-height: 2.7rem;
+            letter-spacing: 0.02em;
+            transition: all .2s;
+            &:hover {
+                background-color: $color-black-1;
+            }
+
+            @include respond (tab-port-break-2) {
+                font-size: 1.4rem;
+                height: 6.1rem;
+            }
+        }
+        &__LoadingPage {
+            width: 31.7rem;
+            height: 8.1rem;
+            background-color: $color-secondary;
+            color: $color-white;
+            border-radius: .5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-weight: 400;
+            font-size: 2.2rem;
+            line-height: 2.7rem;
+            letter-spacing: 0.02em;
+            transition: all .2s;
+            &:hover {
+                background-color: $color-black-1;
+            }
+            @include respond (tab-port-break-2) {
+                font-size: 1.4rem;
+                height: 6.1rem;
+            }
+            @include respond (phone-break-1-1) {
+                font-size: 1rem;
+            }
+        }
+    }
+}

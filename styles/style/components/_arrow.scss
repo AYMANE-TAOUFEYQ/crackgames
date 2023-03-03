@@ -1,0 +1,17 @@
+.arrow{
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-inside{
+        width: 60%;
+        height: 60%;
+    }
+}
+.right-0{
+    right: 0;
+}
+.left-0{
+    left: 0;
+}
